@@ -1,0 +1,10 @@
+{{ $repo := .Get 0 }}
+{{ $url := printf "https://github.com/%s" $repo }}
+<a class="button is-black has-text-weight-medium" href="{{ $url }}" target="_blank">
+  <span class="icon">
+    <i class="fab fa-github"></i>
+  </span>
+  <span>
+    {{ $repo }}
+  </span>
+</a>

@@ -1,7 +1,6 @@
 {{ $social := site.Params.social }}
 <div class="buttons{{ if .centered }} is-centered{{ end }}">
   {{ range $social }}
-  {{ $isGithub := eq .Identifier "github" }}
   {{ $color := .color | default "white" }}
   <a class="button is-{{ .color }} is-radiusless" href="{{ .url }}" target="_blank">
     <span class="icon">

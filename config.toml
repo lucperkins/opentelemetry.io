@@ -23,8 +23,9 @@ OpenTelemetry will not initially support logging, though we aim to incorporate t
 """
 
 [params.logos]
-hero = "opentelemetry-horizontal-color.png"
-cncf = "cncf.png"
+navbar = "opentelemetry-icon-color.png"
+hero   = "opentelemetry-horizontal-color.png"
+cncf   = "cncf.png"
 
 [[params.social]]
 name = "GitHub"
@@ -55,6 +56,11 @@ name = "Mailing list"
 url = "https://lists.cncf.io/g/cncf-opentelemetry-community"
 color = "info"
 icon = "far fa-envelope"
+
+[[menus.main]]
+name = "Spec"
+url = "/spec"
+weight = 1
 
 [[params.fonts]]
 name = "Noto Sans"
